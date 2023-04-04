@@ -19,9 +19,9 @@ public class MailService {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage);
         try {
-            helper.setTo("kvasind6@gmail.com");
+            helper.setTo("kvasind10@gmail.com");
             helper.setText("<h2>car" + car.toString() + "created</h2>",true );
-//            helper.setFrom(new InternetAddress("mr.java2022@gmail.com"));
+//            helper.setFrom(new InternetAddress("kvasind6@gmail.com"));
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
